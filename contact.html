@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js"></script>
+ <link rel="icon"  href="android-chrome-192x192.png" type="image/x-icon">
+ <title="page2">
+    <script src="jquery-2.1.4.min.js"></script>
+	<script src="jquery.validate.min.js"></script>
+<style>
+article {   
+  float: left;
+  width: 100%;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.error{
+    color: #ffae00;
+}
+figure {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+}
+footer {
+  padding: 4px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 10px;
+  font-size:28px
+}
+.registerbtn[type=submit] {
+  background-color: #ffc038;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+   font-size: 18px;
+}
+.registerbtn[type=reset] {
+  background-color: #ffc038;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+   font-size: 18px;
+}
+
+.registerbtn[type=submit]:hover {
+  background-color: #ffae00;
+}
+.registerbtn[type=reset]:hover {
+  background-color: #ffae00;
+}
+input, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+</style>
+
+</head>
+<body>
+<a href="index.html">
+<img src="logo.png" alt="pic" width="450" height="70" style="padding-left: 100px"> 
+</a>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="About.html"target="_blank">About</a>
+  <a href="page2.html" target="_blank">Booking</a>
+  <a href="Album.html"target="_blank">Album</a>
+  <div class="dropdown">
+    <button class="dropbtn">Destinations  
+    </button>
+    <div class="dropdown-content">
+      <a href="p.html">Seven Colored Earth</a>
+      <a href="p2.html">Grand Bay City</a>
+      <a href="p3.html">Black River Gorges Park</a>
+	   <a href="p4.html">Chamarel Waterfall</a>
+    </div>
+  </div> 
+  <a href="program.html"target="_blank">Program</a>
+  <a href="contact.html"target="_blank">Contact</a>
+</div>
+<div class="row">
+  <article>
+    <div class="card">
+      
+      <h1 style="color:#e18e96; font-size:30px"><b>Contact Information</b></h1>
+	   &nbsp;   &nbsp; <span style="color:#ffd700;font-size:28px"><b><b> | </b></b></span>  
+      <span style="font-size:28px">Contact Us</span><br><br>
+      <center>
+<table style="float:left" >
+  <tr><td>
+        <!-- The contact form --> 
+    
+<form align="center" name="myform" onsubmit="return validatForm2()" action="" method="post">
+	 <label width="20px" tabindex="2"> Name: </label><br>  <input type="text" name="name">
+<div class="error" id="nameErr"></div>
+<br><br>
+<label tabindex="2"> E-mail: </label><br> <input type="email" name="email">
+<div class="error" id="emailErr"></div>
+<br><br>
+      <label name ="message">Message</label><br>
+	  <textarea id="Letter" name="Letter" rows="4" cols="50" placeholder="How can we help you?"></textarea> 
+	  <br><br><br>
+       <button class="registerbtn" type="submit" name="submit" value="Submit">SEND</button>
+</form>
+</td><td width="30%">
+  <figure><img src="east.ileauxcerfs.jpg" height="400px" width="500px" >
+  <div class="overlay">
+  </div></figure></td></tr>
+     </table>
+    </div><br><br></center>
+  </div>
+</article>
+</div>
+<br><br><br><br>
+<footer>
+  <p>Copyright @2022 | Designed With by Naira Hassan</p>
+</footer>
+<div id=“top”>  </div>
+<a href="#top">
+<img src="arrow.jpg" style="float:right" alt="go up" width="75" height="35">
+</a>
+</body>
+</html>

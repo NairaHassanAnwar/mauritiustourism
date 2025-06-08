@@ -1,0 +1,144 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"  href="android-chrome-192x192.png" type="image/x-icon">
+  <title="index">
+  <script type="text/javascript" language="javascript">
+ function Resize()
+ { var x = document.getElementById("img");
+ x.style.width = "770px"; 
+ x.style.height = "770px";
+ }
+ function sfdv()
+        {  var x= document.getElementById("img");
+            x.style.width = "650px"; 
+            x.style.height = "550px";
+        }
+ </script>
+<style>
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: left;}
+
+.slideshow-container {
+  max-width: 9000px;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+#backdround {background-image:url(where-to-stay-1); background-position:top reight}
+footer {
+  padding: 4px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 10px;
+  font-size:28px
+}
+</style>
+</head>
+<body>
+	<img src="logo.png" alt="pic" width="550" height="70" style="padding-left: 100px">  
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="About.html"target="_blank">About</a>
+  <a href="page2.html" target="_blank">Booking</a>
+  <a href="Album.html"target="_blank">Album</a>
+  <div class="dropdown">
+    <button class="dropbtn">Destinations  
+    </button>
+    <div class="dropdown-content">
+      <a href="p.html">Seven Colored Earth</a>
+      <a href="p2.html">Grand Bay City</a>
+      <a href="p3.html">Black River Gorges Park</a>
+	   <a href="p4.html">Chamarel Waterfall</a>
+    </div>
+  </div> 
+  <a href="program.html"target="_blank">Program</a>
+  <a href="contact.html"target="_blank">Contact</a>
+</div>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="47103481.jpg" style="width:100%" height="70%;padding-bottom:2; margin-left:1" >
+</div>
+
+<div class="mySlides fade">
+  <img src="beaches.jpg" style="width:100%" height="70%; padding-bottom:2; margin-left:1">
+</div>
+
+<div class="mySlides fade">
+  <img src="north.jpg" style="width:100%" height="70%; padding-bottom:2; margin-left:1">
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); 
+}
+</script>
+<div style="boredr:15px slid blue; background-color:#0354A9; height:60">
+<marquee style="font-family:Lucida Handwriting,Cursive;color:#ffde24;font-size:55"><i>Discover </i> <b style="font-family:Arial,Sans-serif"> <b style="color:#d600d6"> Mauritius </b>
+</marquee>
+</div>
+<br>
+<img src="view.jpg" alt "pic" style="float:right"width="650px" height="550px"  id="img"  onMouseOver = "Resize()" 
+onMouseOut = "sfdv()">
+<p id="p1">Tourism in Mauritius is one of the most sought after tourist areas in the world. 
+Mauritius is an island in the Indian Ocean near Madagascar. Travel to this island requires a visa to enter some countries.
+ Tourism on this island is characterized by the presence of many natural attractions, from beaches and tropical forests. 
+ Also, do not forget the mild climate, as it is located in the Indian Ocean exactly 2000 km fromthe shores of 
+ the African continent near Madagascar. Mauritius will captivate you, lift your soul and make you feel like one of the chosen few.
+Every visitor is entitled to personal attention. Every encounter is an opportunity to discover friendly faces. 
+Behind every smile lies the promise of a unique vacation. The contrast of colours and flavours makes the island an oasis of peace 
+and tranquility, nestled in the turquoise sea. Auritius, a melting pot of past and present seamlessly fused, offers an essential 
+aesthetic that makes one want to return to its shores again and again. May your time with us remain in your memory forever.</p>
+<br><br>
+<footer>
+  <p>Copyright @2022 | Designed With by Naira Hassan<br>
+  Student ID  | 2020593201<br>
+  Section Number  |  20<br> 
+   Semester Number  |  3  <br>
+    Student ID  |  2020593201<br>
+	 Course Nmae |  Web Development<br>
+	 Course Code |  ITDR1105<br><br>
+   </p>
+</footer>
+<div id=“top”>  </div>
+<a href="#top">
+<img src= "arrow.jpg" style="float:right" alt="go up" width="80" height="41" >
+</a>
+</body>
+</html>

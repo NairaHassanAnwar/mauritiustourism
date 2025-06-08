@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js"></script>
+ <link rel="icon"  href="android-chrome-192x192.png" type="image/x-icon">
+ <title="page2">
+    <script src="jquery-2.1.4.min.js"></script>
+	<script src="jquery.validate.min.js"></script>
+<script>
+$(document).ready(function() {
+$('#signup').validate({
+rules: {
+ phonenumber: 'required',
+ }
+ }); 
+ }); 
+</script>
+	<style>
+	footer {
+  padding: 4px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 10px;
+  font-size:28px
+}
+title{
+color:red;}
+	</style>
+</head>
+<body>
+<a href="index.html">
+<img src="logo.png" alt="pic" width="450" height="70" style="padding-left: 100px"> 
+</a>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="About.html"target="_blank">About</a>
+  <a href="page2.html" target="_blank">Booking</a>
+  <a href="Album.html"target="_blank">Album</a>
+  <div class="dropdown">
+    <button class="dropbtn">Destinations  
+    </button>
+    <div class="dropdown-content">
+      <a href="p.html">Seven Colored Earth</a>
+      <a href="p2.html">Grand Bay City</a>
+      <a href="p3.html">Black River Gorges Park</a>
+	   <a href="p4.html">Chamarel Waterfall</a>
+    </div>
+  </div> 
+  <a href="program.html"target="_blank">Program</a>
+  <a href="contact.html"target="_blank">Contact</a>
+</div>
+<br>
+<form align="left" name="myform" onsubmit="return validateForm()" action="process.php" method="post" id="signup">
+<fieldset>
+<legend style="font-size:24px">Booking </legend>
+<label width="20px" tabindex="2"> Name: </label>  <input type="text" name="name">
+<div class="error" id="nameErr"></div>
+<br><br>
+<label tabindex="2"> E-mail: </label> <input type="email" name="email">
+<div class="error" id="emailErr"></div>
+<br><br>
+<label tabindex="2"> Phone number: </label> <input type="text" name="phonenumber"   id="p" 
+ title= "<h5 > Please type your phone number. </h5>">  
+ <br><br> 
+<label width="20px" style="paddin-right:5px" tabindex="2"> Arriving date: <input type="date" name="arriving date"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<label width="20px"style="paddin-left:10px" tabindex="2"> Leaving date: </label> <input type="date" name="leaving date"> 
+<br><br>
+<label tabindex="2"> You are? </label> <br><br>
+<input type="radio" style="padding-left:30px;color:black;" name="family"> Family &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="radio" style="padding-left:30px;color:black;" name="Couple"> Couple  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="radio" style="padding-left:30px;color:black;" name="fiends"> Friends 
+<br><br>
+<label width="20px" tabindex="2"> Numbers of members: </label> 
+<br><br>
+<label width="20px" style="padding-right:12px" tabindex="2"> Child </label><input type="number" name="Child" min="0" max="30"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <label width="20px" style="padding-right:10px" tabindex="2"> Adults </label> <input type="number" name="Adults" min="0" max="30">
+<br><br><br>
+<label width="20px" tabindex="2"> Activities you want to do: </label> <br><br>
+<input type="checkbox" name=" activity" value="Shopping" style="padding-left:20px"> Shopping &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name=" activity" value="Deep See Fishing" style="padding-left:20px"> Deep See Fishing  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name=" activity" value="Golf"style="padding-left:20px"> Golf &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name=" activity" value="Spas" style="padding-left:20px"> Spas &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name=" activity" value="Holicopter Flight" style="padding-left:20px"> Holicopter Flight &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name=" activity" value="Beach Yoga" style="padding-left:20px"> Beach Yoga &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<br> <br><br>
+<label tabindex="2"> Places you want to visit: </label><br><br>
+<input type="checkbox" name=" place" value="Grand Bay" style="padding-right:15px;color:black"> Grand Bay <br>  
+<input type="checkbox" name=" place" value="Blue Bay" style="padding-right:15px;color:black"> Blue Bay <br>
+<input type="checkbox" name=" place" value="The Triolet Shivala" style="padding-right:15px;color:black"> The Triolet Shivala <br>
+<input type="checkbox" name=" place" value="The Labourdonnais Orchards" style="padding-right:15px;color:black"> The Labourdonnais Orchards <br>
+<input type="checkbox" name=" place" value="Mahebourg" style="padding-right:15px;color:black"> Mahebourg <br>
+<input type="checkbox" name=" place" value="Souillac" style="padding-right:15px;color:black"> Souillac <br>
+<input type="checkbox" name=" place" value="Grand River South East" style="padding-right:15px;color:black"> Grand River South East <br><br><br>
+<label tabindex="2"> Hotel you want to stay in: </label><br><br>
+<input type="radio" name="hotel" style="padding-right:15px;color:black"> Constance Hotels &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="radio" name="hotel" style="padding-right:15px;color:black"> Starwood Hotels & Resorts &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="radio" name="hotel" style="padding-right:15px;color:black"> The Authentic Hotels & Guest Houses &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="radio" name="hotel" style="padding-right:15px;color:black"> The Association Des Hotels De Charme (AHC) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<br><br><br>
+<label> Comments:</label> <br> <br> <textarea rows="5" cols="30"> Enter your comments here...
+</textarea>
+<br>
+<script  language="javascript" type="text/javascript">
+		x=prompt ("How many rooms you want to register? ", " ");
+		document.write("<h4>"+"The price is   "+ (x*15) + "  OMR"+ "</h4>");
+</script>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="submit" value="Submit" > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="reset" value="Reset">
+</fieldset>
+</form>
+<br><br>
+<footer>
+  <p>Copyright @2022 | Designed With by Naira Hassan</p>
+</footer>
+<div id=“top”>  </div>
+<a href="#top">
+<img src="arrow.jpg" style="float:right" alt="go up" width="80" height="41">
+</a>
+
+</body>
+</html>

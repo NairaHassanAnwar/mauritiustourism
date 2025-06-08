@@ -1,0 +1,243 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	 <link rel="icon"  href="android-chrome-192x192.png" type="image/x-icon">
+	 	 <title="Album"> </title>
+	 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  opacity:100%
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+footer {
+  padding: 4px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 10px;
+  font-size:28px
+}
+</style>
+</head>
+<body>
+<a href="index.html">
+<img src="logo.png" alt="pic" width="450" height="70" style="padding-left: 100px"> 
+</a>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="About.html"target="_blank">About</a>
+  <a href="page2.html" target="_blank">Booking</a>
+  <a href="Album.html"target="_blank">Album</a>
+  <div class="dropdown">
+    <button class="dropbtn">Destinations  
+    </button>
+    <div class="dropdown-content">
+      <a href="p.html">Seven Colored Earth</a>
+      <a href="p2.html">Grand Bay City</a>
+      <a href="p3.html">Black River Gorges Park</a>
+	   <a href="p4.html">Chamarel Waterfall</a>
+    </div>
+  </div> 
+  <a href="program.html"target="_blank">Program</a>
+  <a href="contact.html"target="_blank">Contact</a>
+</div>
+<br>
+<div class="container">
+  <div class="mySlides">
+    <img src="EWB1qVTXgAIzI_K.jpg" style="width:100%;" alt="pic 1">
+  </div>
+
+  <div class="mySlides">
+    <img src="download (1).jpg" style="width:100% ;opacity:1" alt="pic 2">
+  </div>
+
+  <div class="mySlides">
+    <img src="download.jpg" style="width:100%;" alt="pic 3">
+  </div>
+    
+  <div class="mySlides">
+    <img src="OIP (1).jpg" style="width:100%;" alt="pic 4">
+  </div>
+
+  <div class="mySlides">
+    <img src="OIP (3).jpg" style="width:100%;opacity:1" alt="pic 5">
+  </div>
+    
+  <div class="mySlides">
+    <img src="OIP.jpg" style="width:100%;opacity:1" alt="pic 6">
+  </div>
+  
+   <div class="mySlides">
+    <img src="east.grse_.waterfalls.jpg" style="width:100%;" alt="pic 7">
+  </div>
+  
+   <div class="mySlides">
+    <img src="ganga-talao (1).jpg" style="width:100%;" alt="pic 8">
+  </div>
+  
+  <div class="mySlides">
+    <img src="east.ileauxcerfs.jpg" style="width:100%;" alt="pic 9">
+  </div>
+  
+  <div class="mySlides">
+    <img src="OIP (4).jpg" style="width:100%;" alt="pic 10">
+  </div>
+  <div class="mySlides">
+    <img src="where-to-stay-1.jpg" style="width:100%;" alt="pic 11">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="EWB1qVTXgAIzI_K.jpg" style="width:100%" onclick="currentSlide(1)" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="download (1).jpg" style="width:100%" onclick="currentSlide(2)" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="download.jpg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="OIP (1).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="OIP (3).jpg" style="width:100%" onclick="currentSlide(5)" >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="OIP.jpg" style="width:100%" onclick="currentSlide(6)" >
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="east.grse_.waterfalls.jpg" style="width:100%" onclick="currentSlide(7)" >
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="ganga-talao (1).jpg" style="width:100%" onclick="currentSlide(8)" >
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="east.ileauxcerfs.jpg" style="width:100%" onclick="currentSlide(9)" >
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="OIP (4).jpg" style="width:100%" onclick="currentSlide(10)" >
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="where-to-stay-1.jpg" style="width:100%" onclick="currentSlide(10)" >
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br><br>
+<footer>
+  <p>Copyright @2022 | Designed With by Naira Hassan</p>
+</footer>
+<div id=“top”>  </div>
+<a href="#top">
+<img src="arrow.jpg" style="float:right" alt="go up" width="80" height="41">
+</a>
+</body>
+</html>
